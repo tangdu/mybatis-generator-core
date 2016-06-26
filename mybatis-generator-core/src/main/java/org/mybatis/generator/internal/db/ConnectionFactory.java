@@ -54,6 +54,9 @@ public class ConnectionFactory {
         Driver driver = getDriver(config);
 
         Properties props = new Properties();
+        props.setProperty("useInformationSchema", "true");
+        props.setProperty("useUnicode", "true");
+        props.setProperty("characterEncoding", "UTF-8");
 
         if (stringHasValue(config.getUserId())) {
             props.setProperty("user", config.getUserId()); //$NON-NLS-1$
