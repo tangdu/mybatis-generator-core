@@ -220,7 +220,7 @@ public class TangCommentGenerator implements CommentGenerator {
 		sb.append(" (").append(introspectedTable.getFullyQualifiedTable()).append(")");
 		topLevelClass.addJavaDocLine(sb.toString());
 		topLevelClass.addJavaDocLine(" *  @author tangdu");
-		topLevelClass.addJavaDocLine(String.format(" *  @since $Revision:1.0.0, $Date: %s $",dateFormat.format(new Date())));
+		topLevelClass.addJavaDocLine(String.format(" *  @since vision:1.0.0, Date:%s ",dateFormat.format(new Date())));
 		topLevelClass.addJavaDocLine(" */"); //$NON-NLS-1$
 	}
 
